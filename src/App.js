@@ -1,8 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+// JSX!
+// JSX => JAVA SCRIPT + XML
+// XML => Extended the HTML and Cratedad new Tag
+// App => <App />
 function App() {
-return "hello_b1_branch------work_-_________under proce";
-}
-
-export default App;
+    return <h1>Hello</h1>;
+  }
+  
+  /*function normalFn() {
+    // ..
+    // ..
+    // ..
+    return 100;
+    return "abcd"
+    return true;
+    return [];
+    return {};
+  }*/
+  
+  export default App;
