@@ -3,8 +3,9 @@ function App() {
     <div>
       <Person name="Rahul" />
       <Person name="Rohit" />
-      <Person name="Kharghar" />
-      <Person name="Belapur" />
+      <Person name="america
+    " />
+      <Person name="welshet" />
       <Person name="Nerul" />
       <Person name="Panvel" />
       <Person name="Lonavala" />
