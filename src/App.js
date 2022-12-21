@@ -1,30 +1,29 @@
 import { useState } from "react";
 
 function App() {
-  // useState, hooks, Stateful Variable
-  // ES6 Syntax : De-Structureing
-  // let counter = 100;
-  let [counter, setCounter] = useState(100);
+  let title = "Map Demo";
+  let [list, setList] = useState([]);
 
-  // Member function,
-  // ES6 Syntax: Arrow Function
-  // React Binding + using Interpolation
-  // How calling this function.
-  let increment = () => {
-    // logical opr
-    counter++;
+  let addItem = () => {
+    // logical part
+    let newList = [...list, "NAVI MUMBAI"];
 
-    // dom opr
-    setCounter(counter);
+    // dom part
+    setList(newList);
   };
 
   return (
     <div>
-      <h1>Counter Application</h1>
-      <h1> {counter} </h1>
-      <input type="button" value="Incrment" onClick={increment} />
+      <h1> {title} </h1>
+      <input type="button" value="Add Item Into List" onClick={addItem} />
+
+      {list.map((item) => (
+        <h1>{item}</h1>
+      ))}
     </div>
   );
 }
 
 export default App;
+
+// [delhi, mumbai] => [<h1>delhi</h1>, <h1>mumbai</h1>]
