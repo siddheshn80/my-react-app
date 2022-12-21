@@ -1,19 +1,23 @@
-
-// USER DEFINED TAGS == COMPONENT
 function App() {
+  // Data Members
+  let project = "Counter Application";
+  let btnValue = "Click Meeeeeee";
 
-  let project ="My React App";
-  let username = "siddhesh";
+  // Member :: Type is Functions
+  let clickMe = () => alert();
+  let incrment = () => {};
+  let decrement = () => {};
 
-
-
-  return(
+  // JSX
+  return (
     <div>
-      <h1>(project)</h1>
-    <h1>Hello {username}</h1>
-    
+      <h1> {project} </h1>
+      <h1> </h1>
+      <input type="button" value={btnValue} onClick={clickMe} />
+
+      <input type="button" value="Increment" onClick={incrment} />
     </div>
   );
-
 }
+
 export default App;
