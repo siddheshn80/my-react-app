@@ -1,13 +1,11 @@
-
-
 function App() {
-  let mystyle = { color: "white", background: "purple" };
-
   return (
     <div>
-      <h1 className="beautify">EXTERNAL_______STYLLING!!!!!!!!</h1>
+      <h1 className="bg-dark text-light p-3">Bootstrap Styling!</h1>
 
-     
+      <h1 className="bg-success" style={{ color: "#fff" }}>
+        hello
+      </h1>
     </div>
   );
 }
