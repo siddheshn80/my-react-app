@@ -1,11 +1,11 @@
-import "./App.css";
+
 
 function App() {
   let mystyle = { color: "white", background: "purple" };
 
   return (
     <div>
-      <h1 className="beautify">Hello Again!</h1>
+      <h1 className="beautify">EXTERNAL_______STYLLING!!!!!!!!</h1>
 
       {/** This is kind of internal. Note: Only one curly braces. */}
       <h1 style={mystyle}>Hello World</h1>
